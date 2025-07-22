@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Intervjui i Ankete</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      background: #fafafa;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: #222;
+      color: white;
+      padding: 1em 2em;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    nav .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1em;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    nav ul li a:hover {
+      color: #f0c040;
+    }
+
+    .hero {
+      padding: 3em 2em;
+      background: linear-gradient(135deg,  #bdbdbde2, #ffffff);
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.5em;
+    }
+    .hero p {
+      font-size: 1.2em;
+      color: #555;
+    }
+
+    section {
+      padding: 2em;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 1em;
+      color: #222;
+    }
+
+    /* Grid za grupu itema */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.2em;
+      justify-items: center;
+    }
+
+    /* Svaki item je kartica + naslov ispod */
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 220px;
+    }
+
+    .card {
+      background: #f2f2f2;
+      border-radius: 8px;
+      overflow: hidden;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      width: 100%;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      cursor: pointer;
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .card a {
+      display: block;
+      padding: 1em;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+    }
+
+    .item-caption {
+      margin-top: 0.5em;
+      font-size: 0.95em;
+      color: #444;
+      text-align: center;
+      max-width: 100%;
+    }
+
+    .contact {
+      background: #bdbdbde2;
+      padding: 2em;
+      text-align: center;
+    }
+    .contact p {
+      margin: 0.5em 0;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo"><img src="./fond.png" alt="https://fzm.me/v/index.php/naslovnal"></div>
+      <ul>
+        <li><a href="#hero">Početna</a></li>
+        <li><a href="https://fzm.me/v/index.php/naslovnal">Fond</a></li>
+       
+      </ul>
+    </nav>
+  </header>
+
+  <div class="hero" id="hero">
+    <h1>Izgradnja identiteta kroz razlicite forme instutucije</h1>
+    <p>Na ovom sajtu možete pronaći intervjue i ankete koji pokrivaju važne teme.</p>
+  </div>
+
+  <section id="intervjui">
+    <h2>Interviju</h2>
+  
+    <div class="grid">
+      <div class="item">
+        <a href="interviju1.html">
+        <div class="card">
+          <img src="./fadil/fadil1.jpg" alt="Intervju 1" />
+          <a href="intervju1.html">Interviju o identitetu</a>
+        </div>
+      </a>
+        
+      </div>
+      <div class="item">
+        <a href="interviju2.html">
+        <div class="card">
+          <img src="./fadil/fadil4.jpg" alt="Intervju 2" />
+          <a href="intervju2.html">Interviju o naciji/etnji</a>
+        </a>
+        </div>
+      
+      </div>
+      <div class="item">
+        <a href="interviju3.html">
+        <div class="card">
+          <img src="./fadil/fadil7.jpg" alt="Intervju 3" />
+          <a href="intervju3.html">Interviju o religiji</a>
+          </a>
+        </div>
+        
+      </div>
+      <div class="item">
+        <div class="card">
+          <img src="./enis/enis2.jpg" alt="Intervju 4" />
+          <a href="intervju4.html">Interviju o jezickom identitetu</a>
+        </div>
+        
+      </div>
+      <div class="item">
+        <div class="card">
+          <img src="./enis/enis6.jpg" alt="Intervju 5" />
+          <a href="intervju5.html">Interviju o teritoriji i teritorijalnom identitetu</a>
+        </div>
+      
+      </div>
+      <div class="item">
+        <div class="card">
+          <img src="./enis/enis8.jpg" alt="Intervju 6" />
+          <a href="intervju6.html">Interviju o kulturi i kulturnom identitetu</a>
+        </div>
+      
+      </div>
+    </div>
+  </section>
+
+  <section id="ankete">
+    <h2>Ankete</h2>
+    <div class="grid">
+      <div class="item">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSf1hbsUuQugt8zbv68MnDlNFBRdcKuH_q73DWeZNEIYSvlYFQ/viewform">
+        <div class="card">
+          <img src="./5353371_identitet-sh_ls.jpg" alt="Anketa 1" />
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSf1hbsUuQugt8zbv68MnDlNFBRdcKuH_q73DWeZNEIYSvlYFQ/viewform">Licni identitet</a>
+        </div>
+      </a>
+       
+      </div>
+      <div class="item">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeHJShukVPGwtTennfyll_IVxH8fCpeJRWebGewnH7Jd9PaTw/viewform"></a>
+        <div class="card">
+          <img src="./download.jpg" alt="Anketa 2" />
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeHJShukVPGwtTennfyll_IVxH8fCpeJRWebGewnH7Jd9PaTw/viewform">Nacija/Etnja</a>
+        </div>
+      </a>
+      </div>
+      <div class="item">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSctp_AHTPSdaNF69uMHx28B-vM0deXAK23C_0Kf4lIk9GpQgA/viewform"></a>
+        <div class="card">
+          <img src="./religija.png" alt="Anketa 3" />
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSctp_AHTPSdaNF69uMHx28B-vM0deXAK23C_0Kf4lIk9GpQgA/viewform">Religija i religijski identitet</a>
+        </div>
+      </a>
+     
+      </div>
+      <div class="item">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfHbmDHXak_h1cdivlBFq-dHO8AnOkI-MyvknuJvhmxnYuAeQ/viewform"></a>
+        <div class="card">
+          <img src="./jezik.webp" alt="Anketa 4" />
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfHbmDHXak_h1cdivlBFq-dHO8AnOkI-MyvknuJvhmxnYuAeQ/viewform">Jezicki identitet</a>
+        </div>
+      </a>
+      
+      </div>
+      <div class="item">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdVwcBKoFpomjm-_E_krqrKx6n-8gBbrBRdGsUwSyhrK_8A8g/viewform"></a>
+        <div class="card">
+          <img src="./images.png" alt="Anketa 5" />
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdVwcBKoFpomjm-_E_krqrKx6n-8gBbrBRdGsUwSyhrK_8A8g/viewform">Terirotrija i teritorijalni identitet</a>
+        </div>
+      </a>
+       
+      </div>
+      <div class="item">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSffCSwEKYHvxj4r_hiSeTBh6Hj_YotT0cPEHgiKHLznSnAHHA/viewform"></a>
+        <div class="card">
+          <img src="./kultura.jpg" alt="Anketa 6" />
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSffCSwEKYHvxj4r_hiSeTBh6Hj_YotT0cPEHgiKHLznSnAHHA/viewform">Kultura i kulturni identitet</a>
+        </div>
+      </a>
+   
+      </div>
+    </div>
+  </section>
+
+  <section id="kontakt" class="contact">
+    <h2>Sajt izradio: Adnan Metđonaj</h2>
+    <p><strong>Iznijeti stavovi su isključivo odgovornost autora i/ili izdavača i nužno ne izražavaju stavove Fonda</strong></p>
+  </section>
+
+  <footer>
+    <p> Izgradnja identiteta kroz razlicite forme instutucije</p>
+  </footer>
+
+</body>
+</html>
+
